@@ -49,7 +49,7 @@ svg, path, rect, ellipse, polygon, text {
   margin: 4rem auto;
   display: block;
   max-height: 12em;
-  max-width:60%; margin:5rem auto
+  width:100%; max-width: 30em; margin:5rem auto;
  }
 
 .example .only-dark-background {
@@ -58,7 +58,7 @@ svg, path, rect, ellipse, polygon, text {
   opacity: 0;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .example:hover {
     background-color: #456;
     color: #fff;
@@ -172,19 +172,19 @@ input[type="radio"] {
   position: fixed;
   top: 0;
   right: 0;
-  border: 0.2em solid;
-  padding: 1em;
+  border: 0.2em solid; font-size: 1rem;
+  padding: 0 1rem;
   margin: 0;
   font-weight: 600;
   -webkit-user-select: none;
   user-select: none;
   text-transform: uppercase;
   text-align: center;
-  width: 12em;
+  width: 8em; height:3rem; line-height: 2.75rem;
   display: block;
 }
 
-.github-link {
+.github-link {width:6em;
   text-decoration: none;
   margin: 0;
   position: fixed;
