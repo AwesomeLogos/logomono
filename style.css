@@ -52,7 +52,7 @@ svg, path, rect, ellipse, polygon, text {
   width:100%; max-width: 30em; margin:5rem auto;
  }
 
-.example .only-dark-background {
+.only-dark-background {
   display: block !important;
   /*important is appropriate*/
   opacity: 0;
@@ -73,12 +73,12 @@ svg, path, rect, ellipse, polygon, text {
     opacity: 0;
   }
 }
-#invert:checked ~ div .example .only-dark-background {
+#invert:checked ~ div  .only-dark-background {
   display: block !important;
   opacity: 1;
 }
 
-#invert:checked ~ div .example .only-light-background {
+#invert:checked ~ div  .only-light-background {
   opacity: 0;
 }
 
@@ -371,6 +371,8 @@ h3 {
   fill-opacity: 0.95;
 }
 
+.tutorial {text-align:center}
+.tutorial .options svg{width: 24%; margin:0; height: 5em;}
 code {
   padding: .2em;
   opacity: .7;
