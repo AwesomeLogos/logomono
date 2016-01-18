@@ -183,19 +183,29 @@ one-color logos,  done right
 <p>No <code>rect</code>, <code>polygon</code>, <code>ellipse</code>, <code>line</code>, <code>circle</code> or <code>text</code>  elements. No <code>transforms</code> on <code>&lt;g&gt;</code>.<br> Sadly, no <code>&lt;use xlink:href="&hellip;</code> or <code>&lt;clipPath&gt;</code> either.
 </p>
 <p>We want these files to be as easy as possible to work with as raw elements and not risk tricky things like duplicate ID pollution when concatinated into HTML.
-</p><p>Some CSS includes <code>path{fill:currentcolor}</code> which means <code>body{color:#555;}</code> could color everything in the foreground including SVG paths. the CSS would be more complex to work with shapes made by another SVG element.</p>
+
 <p><code>&lt;Path&gt;</code> only means bake your text into paths too.</p>
 
+<h3><code>path{fill:currentcolor}</code></h3>
+<p>Something most webdevelopers using SVG logos inline will want to do.</p>
+<p><code>path{fill:currentcolor}</code> means the <code>color:</code> CSS property affects the fill of your logos <br>
+  This CSS would be more complex to work with shapes made by another SVG element.</p>
 
 <h3>Ethical, editorial use only</h3>
- <p>Logomono files are for legitimate editorial reference  &ndash; not for misrepresenting a brand.
- </p><p>We collect and clean quality logos in a standard format to respect the integrity of each.</p>
+<p>Logomono files are for legitimate editorial reference and not for misrepresenting a brand.
+<br>This project collects quality logos in a standard format, to respect the integrity of their origins and intent.</p>
    <p>Copyright and trademarks for logos are still held by their respective owner where applicable.
-   When in doubt, it's best to always ask the represented organisation for permission to use their logo.</p>
-  <p>We know that journalists and other communicators source logos using search engines &mdash;
-    often finding lossy, color bitmaps.  </p><p>The absence of a logo on Logomono does not prevent misrepresentation.
-      It often degrades the quality of a brand and even risks being inappropriately displayed with more prominence than the host design.
-      Being one color is one way logomono ensures appropriate use happens - and that the host brand gets prominence.</p>
+   When in doubt, always ask the represented organisation for permission to use their mark.</p>
+
+   <p>Fair use, fair dealing and fair comment laws exist in various countries around the world that defend the appropriate use of other organizations logos.
+     But there is no substitute for getting permission</p>
+
+<h3>A solution to a complex problem</h3>
+  <p>We know that journalists and other communicators source logos using image search engines &mdash;
+    often finding lossy, full-color bitmaps from dated graphics and untrusted origins.  </p>
+    <p>The absence of a logo on Logomono does not prevent this kind of misrepresentation.<br>
+      Misuse of a trademarks risks confusion, causes a visual battle for prominence, and often degrades the percieved quality of all brands involved.
+  <br>Being one color is one way to ensures appropriate use happens &mdashl; and that the host brand gets more prominence and visual ownership than the identities it references.</p>
   <p>If you can verify you represent a brand and would like a logo removed from logomono, please file a github issue.<br> If you represent a brand and are sick of poor quality representations of your logo, contribute here.</p>
 
 
@@ -224,6 +234,32 @@ one-color logos,  done right
 </svg>
 </div>
 </div>
+
+<div class="container process">
+<h3>Steps in a logo cleanup process</h3>
+<p>The tool tailored to testing and cleaning Logomono logos hasn't been written yet. <br>It will likely use one of (or a combination of):</p>
+<ul><li><a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a></li>
+<li><a href="http://petercollingridge.appspot.com/svg-editor"> SVG-editor</a></li>
+<li><a href="http://inkscape.org"> Inkscape</a> &ndash; scripted using gtkverbs</a></li>
+</p>
+<br>
+<hr>
+<h4>steps and checks</h4>
+<label>clean SVG</label>
+<label>coordinates</label>
+<label>elements</label>
+<label>viewbox</label>
+<label>inversion</label>
+
+
+<section>
+
+</section>
+<section></section>
+<section></section>
+<section></section>
+<section></section>
+</div>
 <footer>
   <div class="container">
      <svg class="brushpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
@@ -237,7 +273,8 @@ one-color logos,  done right
 
        <path class="smear" d=" m 64,492 364,0" clip-path="url(#swipemask)"></path>
      </svg>
-<p>This is a personal project started by Andy Fitzsimon and does not relate to his employer. <br> The Logomono project is still under construction, please get on <a href="https://github.com/andyfitz/logomono">GitHub</a> and help if you can.</p>
+<p>This is a personal project started by Andy Fitzsimon and does not relate to his employer. </p><p>
+   The Logomono project is still new and under construction, please get on <a href="https://github.com/andyfitz/logomono">GitHub</a> and help.</p>
 
 </div></footer>
 
