@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,500);
 
+.code-sample,
 code, pre{font-family: 'Source Code Pro'}
 * {
   box-sizing: border-box;
@@ -105,7 +106,6 @@ svg, path, rect, ellipse, polygon, text {
   border: .2em solid;
   overflow: auto;
   padding: 2em;
-  font-family: menlo, monospace;
 }
 
 .code-sample > div {
@@ -399,6 +399,11 @@ code {
 .boxes{text-align:center; margin-top: 4rem}
 .boxes svg{position:relative;width: 17em; height: 10em; display:inline-block; padding:0; margin:1rem 0 }
 
+@media (max-width:50em){h3{font-size: 9vw;}
+
+.process label{display:block; padding: .5rem 0rem; position:relative; border:none; height: auto; line-height:none; border-bottom: .1em solid;  text-align:center;}
+
+}
 @media (min-width:50em){.boxes svg:nth-child(odd){margin-right: 6em;}
 
 
@@ -410,10 +415,6 @@ code {
 }
 
 
-
-h3 code{padding:0;font-weight: 100}
-
-
 header{position:relative; z-index:2}
 
 .wrapper:after{content:"logomono"; border-bottom:.2em solid; color:#456;  position:fixed; z-index:1; top:0;
@@ -422,3 +423,12 @@ height: 3.2rem; background-color:#fff; }
 
 #invert:checked ~
 .wrapper:after{background-color:#456; color:#fff;}
+
+
+
+
+.process li, .process ul{list-style:none; margin:1rem auto; }
+.process li{display:inline-block; position:relative; width: auto;}
+.process li:before{content:""; display:block; position: absolute; top:0; bottom:0; left:0; right:0; width: 100%; height: 100%; border: .1em solid currentcolor ; opacity:.5;}
+.process li > a {padding: 1em; display:inline-block; text-decoration:none;  position:relative; }
+h3 code{padding:0;font-weight: 100; white-spacing:wrap}
