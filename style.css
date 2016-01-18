@@ -444,7 +444,6 @@ code {
     border: none;
     height: auto;
     line-height: none;
-    border-bottom: .1em solid;
     text-align: center;
   }
 }
