@@ -116,7 +116,9 @@ one-color logos,  done right
     This project will soon host scripts to generate optimised files for dark or light backgrounds — remove the alternate paths, and generally have an easy time working with logos</p><p> You can even generate your png-fallbacks after coloring them with css and more
 
 
-  <h3>One color, no exceptions</h3>
+
+
+  <h3>One flat color, no exceptions</h3>
   <p>Okay, one exception: opacity is available &ndash; but only as a last option.  <br> Do it inline as <code>style="opacity:.5"</code> rather than external css or <code>fill-opacity</code>.   Only use it in cases where it would be otherwise impossible to accurately and respectfully convey the logo as one solid fill.
   Gradients are a no-no  too beacuse they use <code>id</code>'s  which causes major concatination problems. </p>
   <p>Here are some stubborn examples where it would be impossible to not use opacity without creating a completely different logo, messing with the original linework (literally stepping over the line)<p>
@@ -160,7 +162,7 @@ one-color logos,  done right
 
 
    <h3> 4% space inside the viewbox, start at 0 0 </h3>
-<p>Leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.</p>
+<p>Leave between 4% and 5% space to each edge in your logo area. This prevents logo edges from sharply aliasing at small sizes.</p>
 <p>Don't give too much room however, or the logo will appear tiny when used next to others.</p>
 <p> Logomono will reject files with blank areas of 10% or greater around the margin.</p>
 <p> While we're talking viewboxes,  try to keep viewbox coordinates below 500 and limit path node positions to 2 decimal places. This keeps our files small, lean and mean.</p>
@@ -279,7 +281,7 @@ In the meantime, please use any of the above to help ptimise your SVG.
 <section class="step-5"></section>
 </div>
 </div>
-</div>
+
 <footer>
   <div class="container">
      <svg class="brushpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
@@ -296,7 +298,7 @@ In the meantime, please use any of the above to help ptimise your SVG.
 <p>This is a personal project started by Andy Fitzsimon and does not relate to his employer. </p><p>
    The Logomono project is still new and under construction, please get on <a href="https://github.com/andyfitz/logomono">GitHub</a> and help.</p>
 
-</div></footer>
+</div></footer></div>
 
 
 

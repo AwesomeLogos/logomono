@@ -4,6 +4,7 @@ code, pre {
   font-family: 'Source Code Pro';
 }
 
+p code{ font-size:.8rem;}
 * {
   box-sizing: border-box;
 }
