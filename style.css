@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,500);
-
 .code-sample,
-code, pre{font-family: 'Source Code Pro'}
+code, pre {
+  font-family: 'Source Code Pro';
+}
+
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -22,7 +23,6 @@ h1 {
 
 h1 small {
   display: inline-block;
-
   font-size: 1rem;
 }
 
@@ -32,7 +32,11 @@ h1 small {
   padding: 2rem 1rem;
 }
 
-.container {font-size: 1rem; line-height: 1.5rem;}
+.container {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 header, footer {
   background-color: #456;
   color: #fff;
@@ -59,8 +63,10 @@ svg, path, rect, ellipse, polygon, text {
   margin: 4rem auto;
   display: block;
   max-height: 12em;
-  width:100%; max-width: 30em; margin:5rem auto;
- }
+  width: 100%;
+  max-width: 30em;
+  margin: 5rem auto;
+}
 
 .only-dark-background {
   display: block !important;
@@ -83,12 +89,12 @@ svg, path, rect, ellipse, polygon, text {
     opacity: 0;
   }
 }
-#invert:checked ~ div  .only-dark-background {
+#invert:checked ~ div .only-dark-background {
   display: block !important;
   opacity: 1;
 }
 
-#invert:checked ~ div  .only-light-background {
+#invert:checked ~ div .only-light-background {
   opacity: 0;
 }
 
@@ -167,13 +173,11 @@ p {
   font-weight: 400;
 }
 
-
-
 input[type="radio"] {
   display: none;
 }
 
-.github-link, label[for="invert"], body > label{
+.github-link, label[for="invert"], body > label {
   background-color: #456;
   z-index: 9;
   cursor: pointer;
@@ -181,7 +185,8 @@ input[type="radio"] {
   position: fixed;
   top: 0;
   right: 0;
-  border: 0.2em solid; font-size: 1rem;
+  border: 0.2em solid;
+  font-size: 1rem;
   padding: 0 1rem;
   margin: 0;
   font-weight: 600;
@@ -189,11 +194,14 @@ input[type="radio"] {
   user-select: none;
   text-transform: uppercase;
   text-align: center;
-  width: 8em; height:3rem; line-height: 2.75rem;
+  width: 8em;
+  height: 3rem;
+  line-height: 2.75rem;
   display: block;
 }
 
-.github-link {width:6em;
+.github-link {
+  width: 6em;
   text-decoration: none;
   margin: 0;
   position: fixed;
@@ -210,7 +218,6 @@ body > input[type="radio"]:checked + label {
   display: none;
   opacity: 0;
 }
-
 
 .opacity-demo {
   text-align: center;
@@ -285,7 +292,8 @@ a {
 
 h2 {
   font-weight: 100;
-  font-size: 5em; line-height: 1.335em;
+  font-size: 5em;
+  line-height: 1.335em;
 }
 
 ul {
@@ -306,24 +314,32 @@ header li {
 li:last-child {
   margin-right: 0;
 }
+
 h3 {
   margin-bottom: 0;
   margin-top: 3em;
   font-weight: 100;
   font-size: 3em;
   line-height: 1.15em;
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 50em) {
-  .safe-viewbox{width: 100% !important; }
-  .safe-viewbox svg{  height: 7em ;}
+  .safe-viewbox {
+    width: 100% !important;
+  }
+
+  .safe-viewbox svg {
+    height: 7em;
+  }
+
   li {
     width: 100%;
   }
 
   h1 {
-    font-size: 18vw; line-height: 1em;
+    font-size: 18vw;
+    line-height: 1em;
   }
 
   h1 small {
@@ -331,7 +347,6 @@ h3 {
     width: 100%;
     font-size: 4vw;
   }
-
 
   .code-sample {
     padding: 1rem;
@@ -367,7 +382,6 @@ h3 {
   justify-content: center;
   vertical-align: center;
   height: 20em;
-
 }
 
 .safe-viewbox svg {
@@ -378,64 +392,173 @@ h3 {
 }
 
 .safe-viewbox svg path {
-
   fill-opacity: 0.95;
 }
 
-.tutorial {text-align:center}
-.tutorial .options svg{width: 24%; margin:0; height: 5em;}
+.tutorial {
+  text-align: center;
+}
+
+.tutorial .options svg {
+  width: 24%;
+  margin: 0;
+  height: 5em;
+}
+
 code {
   padding: .2em;
   opacity: .7;
 }
 
 @keyframes viewboxey {
-0%{height: 6em;}
+  0% {
+    height: 6em;
+  }
   100% {
-
-    width: 8em;;
+    width: 8em;
   }
 }
-.boxes{text-align:center; margin-top: 4rem}
-.boxes svg{position:relative;width: 17em; height: 10em; display:inline-block; padding:0; margin:1rem 0 }
-
-@media (max-width:50em){h3{font-size: 9vw;}
-
-.process label{display:block; padding: .5rem 0rem; position:relative; border:none; height: auto; line-height:none; border-bottom: .1em solid;  text-align:center;}
-
-}
-@media (min-width:50em){.boxes svg:nth-child(odd){margin-right: 6em;}
-
-
-.process label{display:inline-block; padding: 3rem 0rem;padding-top:4rem; position:relative; border:none; height: auto; line-height:none;  width: 19%;  text-align:center;}
-.process label:after{content:"→"; opacity:.25; position:absolute; top: 1em; left: 0%; width: 100%; text-align:center; font-size: 2rem; font-weight: 300}
-.process label:hover{background-color:#456; color : #fff}
-.process label:hover:after{opacity:1}
-
+.boxes {
+  text-align: center;
+  margin-top: 4rem;
 }
 
+.boxes svg {
+  position: relative;
+  width: 17em;
+  height: 10em;
+  display: inline-block;
+  padding: 0;
+  margin: 1rem 0;
+}
 
-header{position:relative; z-index:2}
+@media (max-width: 50em) {
+  h3 {
+    font-size: 9vw;
+  }
 
-.wrapper:after{content:"logomono"; border-bottom:.2em solid; color:#456;  position:fixed; z-index:1; top:0;
-content:"logomono"; text-align:center; font-weight: 600; line-height: 3.2rem; width: 100%;
-height: 3.2rem; background-color:#fff; }
+  .process label {
+    display: block;
+    padding: .5rem 0rem;
+    position: relative;
+    border: none;
+    height: auto;
+    line-height: none;
+    border-bottom: .1em solid;
+    text-align: center;
+  }
+}
+@media (min-width: 50em) {
+  .boxes svg:nth-child(odd) {
+    margin-right: 6em;
+  }
+
+  .process label {
+    display: inline-block;
+    padding: 3rem 0rem;
+    padding-top: 4rem;
+    position: relative;
+    border: none;
+    height: auto;
+    line-height: none;
+    width: 19%;
+    text-align: center;
+  }
+
+  .process label:after {
+    content: "→";
+    opacity: .25;
+    position: absolute;
+    top: 1em;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .process label:hover {
+    background-color: #456;
+    color: #fff;
+  }
+
+  .process label:hover:after {
+    opacity: 1;
+  }
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper:after {
+  content: "logomono";
+  border-bottom: .2em solid;
+  color: #456;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  content: "logomono";
+  text-align: center;
+  font-weight: 600;
+  line-height: 3.2rem;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #fff;
+}
 
 #invert:checked ~
-.wrapper:after{background-color:#456; color:#fff;}
+.wrapper:after {
+  background-color: #456;
+  color: #fff;
+}
 
+.process li, .process ul {
+  list-style: none;
+  margin: 1rem auto;
+}
 
+.process li {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
 
+.process li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.1em solid currentcolor;
+  opacity: .5;
+}
 
-.process li, .process ul{list-style:none; margin:1rem auto; }
-.process li{display:inline-block; position:relative; width: auto;}
-.process li:before{content:""; display:block; position: absolute; top:0; bottom:0; left:0; right:0; width: 100%; height: 100%; border: .1em solid currentcolor ; opacity:.5;}
-.process li > a {padding: 1em; display:inline-block; text-decoration:none;  position:relative; }
-h3 code{padding:0;font-weight: 100; white-spacing:wrap}
+.process li > a {
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
 
+h3 code {
+  padding: 0;
+  font-weight: 100;
+  white-spacing: wrap;
+}
 
-.steps label:hover{box-shadow:  inset 0 0 0 .2em}
-.steps input[type="radio"]:checked + label{box-shadow: inset 0 0 0 .2em ;}
+.steps input[type="radio"]:checked + label {
+  box-shadow: inset 0 0 0 0.2em;
+}
 
+.steps label {
+  cursor: pointer;
+}
 
-.steps label{cursor:pointer}
+@media (max-width:40em){
+  header li{width: 100%}
+}
